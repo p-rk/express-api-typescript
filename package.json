@@ -1,6 +1,6 @@
 {
-  "name": "hostpanel",
-  "version": "1.0.0",
+  "name": "express-api-typescript",
+  "version": "0.0.1",
   "main": "src/index.ts",
   "license": "MIT",
   "scripts": {
