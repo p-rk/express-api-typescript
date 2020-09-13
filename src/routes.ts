@@ -1,12 +1,10 @@
 import express from "express";
 
-import v1Test from "./api/api";
+import { router as ApiRoutes } from "./api/api.routes";
 
 const router = express.Router();
 
 /* v1 routes */
-router.use("/v1", v1Test);
-
-/* v2 routes */
+router.use("/v1", ApiRoutes);
 
 export default router;
