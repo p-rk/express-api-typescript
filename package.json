@@ -5,7 +5,8 @@
   "main": "src/index.ts",
   "license": "MIT",
   "scripts": {
-    "dev": "cross-env tsc -w & NODE_ENV=development nodemon dist/",
+    "compile": "tsc && cross-env NODE_ENV=development node dist/",
+    "dev": "nodemon -e ts --exec \"yarn compile\"",
     "build": "cross-env NODE_ENV=production tsc",
     "start": "cross-env NODE_ENV=production node dist/index.js",
     "test": "cross-env NODE_ENV=test jest --verbose --coverage --detectOpenHandles --forceExit"
